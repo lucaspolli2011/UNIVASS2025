@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maletas Premium - Loja Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Maletas Premium</div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#carrinho" class="btn-carrinho">🛒 Carrinho (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Bem-vindo à Maletas Premium</h2>
+        <p>Oferecemos a melhor qualidade em fabricação, importação e revenda de maletas para diversos usos.</p>
+        <a href="#produtos" class="btn">Conheça nossos produtos</a>
+        
+        <section id="produtos" class="products">
+            <div class="product">
+                <img src="maleta2.webp" alt="Maleta 1">
+                <h3>Maleta Executiva</h3>
+                <p>Design sofisticado e resistente.</p>
+                <button class="btn-adicionar" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="maleta1.jpg" alt="Maleta 2">
+                <h3>Maleta de Alumínio</h3>
+                <p>Segurança e durabilidade incomparáveis.</p>
+                <button class="btn-adicionar" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="maleta3.jpg" alt="Maleta 3">
+                <h3>Maleta de Viagem</h3>
+                <p>Ideal para transportar com estilo.</p>
+                <button class="btn-adicionar" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Maletas Premium. Todos os direitos reservados.
+    </footer>
+    <script>
+        let cartCount = 0;
+        function adicionarAoCarrinho() {
+            cartCount++;
+            document.getElementById("cart-count").textContent = cartCount;
+        }
+    </script>
+</body>
+</html>
